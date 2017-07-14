@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend-Finder</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <!-- Server and Routing JS -->
+     <script type="text/javascript" src="../javascript/server.js"></script>
+    <script type="text/javascript" src="../routing/javascript/apiRoutes.js"></script>
+    <script type="text/javascript" src="../routing/javascript/htmlRoutes.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1><i class="fa fa-facebook-square" aria-hidden="true"></i>Friend-Finder</span></h1>
+            <hr />          
+            <h2>Answer a few basic questions.</h2>
+            <h2>Then find the friend with the greatest compatibility!</h2>
+            <br />
+            <div class="text-center">
+                <a href="/survey.html"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</button></a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p><a href="./data/friends.json">API Friends List</a> | <a href="https://github.com/kvillejoint/Friend-Finder">GitHub Repo</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
