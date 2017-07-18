@@ -2,7 +2,7 @@
 const friends = require("../data/friends.js");
 
 module.exports = function(app){
-
+//console.log("Loaded api routes")
 
 //GET route display a JSON of all possible friends
 app.get("/api/friends", function(req, res) {
