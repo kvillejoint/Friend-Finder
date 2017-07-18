@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend-Finder</title>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS -->
+<!-- Link to Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css"></link>
+<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <!-- JavaScript -->
+<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    
+<!-- JavaScript -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
-    <!-- Server and Routing JS -->
+<!-- Server and Routing JS -->
     <script type="text/javascript" src="../../server.js"></script>
     <script type="text/javascript" src="../routing/apiRoutes.js"></script>
     <script type="text/javascript" src="../routing/htmlRoutes.js"></script>
@@ -232,9 +235,25 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous">
     </script>
-    <script>
-        //look into id function from hot-Restaurant repo
-        // const contentsOf = function contentsOf (id)
+    <script type="text/javascript">
+        $(".submit").on("click", function(event) {
+            event.preventDefault();
+            let score =[];
+            let scoreArray = [
+                $("#q1 option:selected").val(),
+                $("#q2 option:selected").val(),
+                $("#q3 option:selected").val(),
+                $("#q4 option:selected").val(),
+                $("#q5 option:selected").val(),
+                $("#q6 option:selected").val(),
+                $("#q7 option:selected").val(),
+                $("#q8 option:selected").val(),
+                $("#q9 option:selected").val(),
+                $("#q10 option:selected").val()
+            ]
+
+        })
+        
     </script>
 </body>
 </html>
