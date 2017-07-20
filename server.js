@@ -15,11 +15,8 @@ require("./app/routing/htmlRoutes")(app);
 //array of objects for friends
 const friends = [];
 
-//set up for Json parser for applicaiton
-let jsonParser = bodyParser.json()
-
-//create urlencoded Parser
-let urlencodedParser = bodyParser.urlencoded({ extended: false });
+//create app parser (url encoded parser)
+let appdParser = bodyParser.urlencoded({ extended: false });
 
 //set up express app to handle data parsing
 app.use(bodyParser.json({ type: "applicatoin/*+json" }))

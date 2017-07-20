@@ -236,24 +236,28 @@
     crossorigin="anonymous">
     </script>
     <script type="text/javascript">
-        $(".submit").on("click", function(event) {
+        $(".submit").on("click", function() {
             event.preventDefault();
             let score =[];
             let scoreArray = [
-                $("#q1 option:selected").val(),
-                $("#q2 option:selected").val(),
-                $("#q3 option:selected").val(),
-                $("#q4 option:selected").val(),
-                $("#q5 option:selected").val(),
-                $("#q6 option:selected").val(),
-                $("#q7 option:selected").val(),
-                $("#q8 option:selected").val(),
-                $("#q9 option:selected").val(),
-                $("#q10 option:selected").val()
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
             ]
 
         })
-        
+        //post data to current url of website for use in API link to show information
+        //let url = 
+        //$.post("/api/friends", userInput, function(data) {
+            //insert modal for showing friend match info
+        //}
     </script>
 </body>
 </html>
